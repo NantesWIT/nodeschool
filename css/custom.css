@@ -1,134 +1,129 @@
+* international day */
+#international {
+  border-top: 3px solid black;
+  background-image: url(http://nodeschool.io/images/international-day-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 4em;
+  text-shadow: 1px 1px 10px #333333;
+}
+#international img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  margin-bottom: -1.5em;
+}
+#international h3 {
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#international time {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+#international h3, time {
+  color: white;
+  font-family: Helvetica, Arial, "sans-serif";
+}
+
 /* overrides */
 
-.features-item.first > .features-circle {
-  background-color: #7097db;
-  border: 6px solid #1a348e;
-}
-
-.features-item.first:hover > .features-circle {
-  background-color: #1a348e;
-}
-
-.features-item.middle > .features-circle {
-  background-color: #d6d6d6;
-  border: 6px solid #999;
-}
-
-.features-item.middle:hover > .features-circle {
-  background-color: #fff;
-  border-color: #d6d6d6;
-}
-.features-item.middle:hover .features-circle-icon {
-  color: #d6d6d6;
-}
-
-.features-item.last > .features-circle {
+.features-circle {
   background-color: #f26b66;
   border: 6px solid #d82727;
 }
 
-.features-item.last:hover > .features-circle {
-  background-color: #d82727;
+.features-item:hover .features-circle {
+  background-color: #AB3375;
+  border-color: #8E1A59;
 }
 
 .logo span:first-child {
-  color: rgb(230, 225, 203);
-  margin: 0 -12px 0 -14px;
+  color: #D82727;
 }
 
 .logo {
-  color: rgb(253, 232, 230);
+  /*color: rgb(253, 232, 230);*/
+  color: #fafafa;
   white-space: nowrap;
 }
 
 .site-header {
-  border-top: 5px solid #8e1a59;
-  background-color: #f7f7f7;
+  border-top: 5px solid #8E1A59;
+  background-color: #F7F7F7;
   text-shadow: none;
   color: black;
 }
 
 .section-signup {
-  background-color: #1a348e;
+  background-color: #8E1A59;
 }
 
-.section-sponsoring {
-  background-color: #d6d6d6;
+.section-map {
+  background-color: #eee;
+  text-align: center;
 }
 
 .site-header .logo {
-  background-color: rgba(110, 0, 0, 0.5);
+  background-color: rgba(150, 150, 150, 0.4);
 }
+
 
 .signup-form .btn-side {
   text-decoration: none;
 }
 
 .signup-form .btn-side:hover {
-  border-color: rgb(236, 234, 213);
-  color: rgb(92, 0, 50);
-  background-color: rgb(236, 234, 213);
+  border-color: rgb(236,234,213);
+  color: rgb(92,0,50);
+  background-color: rgb(236,234,213);
 }
 
 /* end color overrides */
 
-.row {
-  max-width: 850px;
-}
+.row { max-width: 850px; }
 
-.section-signup,
-.signup-subtitle {
-  color: white;
-}
-.section-signup a {
-  color: white;
-  text-decoration: underline;
-}
+header { position: relative; }
+header .row { z-index: 2; position: relative; }
+.section-signup, .signup-subtitle { color: white; }
+.section-signup a { color: white; text-decoration: underline; }
 
-.section-sponsoring,
-.signup-subtitle {
-  color: white;
-}
-.section-sponsoring a {
-  color: white;
-  text-decoration: underline;
-}
+.subheader { text-align: center; color: white; text-transform: uppercase; }
+.open-knowledge-foundation, .dat { width: 150px; float: right; }
+.dat { margin-right: 35px; position: relative; top: 20px; }
 
-.subheader {
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-}
-.open-knowledge-foundation,
-.dat {
-  width: 150px;
-  float: right;
-}
-.dat {
-  margin-right: 35px;
-  position: relative;
-  top: 20px;
-}
+/*.logo { font-family: 'Droid Sans Mono';}*/
 
 .site-header {
-  border: none;
-  height: 402px;
-  background: transparent url('../img/nodeschool-paris.svg') center 10px
-    no-repeat;
+  background-position: 52% -150px;
+  background-image: url("../img/nantes.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
-#subheadline,
-#subheadline a {
-  color: #d82727;
-  background-color: rgba(216, 39, 39, 0.3);
+#header{
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-#subheadline a {
+.subheadline, .subheadline a {
+  color: #222;
+}
+
+.subheadline{
+  background-color: rgba(200, 200, 200, 0.7);
+
+}
+
+.subheadline a {
   text-decoration: underline;
 }
 
 .header-intro-wrap {
-  padding: 120px 0 0;
+  padding-top: 110px;
   text-align: center;
 }
 
@@ -147,16 +142,20 @@
   color: white;
 }
 
+
 .footer-info {
   color: white;
 }
 
 .site-footer {
-  background-color: #af2420;
+  background-color: #AF2420;
 }
 
-#whatweuse .two,
-#whatweuse h2 {
+footer h4{
+  text-align: center;
+}
+
+#whatweuse .two, #whatweuse h2 {
   text-align: center;
 }
 
@@ -174,10 +173,8 @@
   }
   .header-signup {
   }
-  .header-sponsoring {
-  }
   .header-intro-wrap .hs-disclaimer {
-    margin-top: 50px;
+    margin-top:50px;
   }
   .header-intro-wrap {
     padding-bottom: 50px;
@@ -199,21 +196,88 @@
 }
 
 .open-data-node {
-  float: right;
+	float: right;
 }
 
-*[lang] {
-  font-style: italic;
-}
-em *[lang],
-i *[lang] {
-  font-style: normal;
-}
-
-.sponsors {
-  border-top: 1px solid #eee;
-  margin-top: 1em;
-}
-.sponsors p {
+section.section-organizers{
   text-align: center;
+  background-color: #9F1F30;
+  color: white;
+}
+
+section.section-organizers h4{
+  margin-bottom: 2em;
+  color: white;
+}
+section.section-organizers h5, section.section-organizers h6{
+  color: white;
+}
+
+.organizers{
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+  display: box;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -o-flexbox;
+  display: flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.organizers div{
+  padding-left: 2em;
+  padding-right: 2em;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+}
+.organizers img{
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+}
+
+.organizers a{
+  color: white;
+  background-color: rgba(white, 0.0);
+  text-decoration: underline;
+}
+.organizers a:hover{
+  background-color: rgba(white, 0.3);
+  transition: background-color 0.5s ease;
 }
