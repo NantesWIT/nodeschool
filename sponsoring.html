@@ -1,0 +1,75 @@
+<!doctype html>
+<head>
+
+  <meta charset="utf-8">
+  <title>NodeSchool Nantes • Le chapitre nantais de NodesSchool.io</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/gumby.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+  <!-- START: Site Header -->
+  <header role="banner" class="site-header">
+    <!-- START: Intro -->
+    <div id="header" class="header-intro-wrap fadeUpIn">
+
+      <div class="catch-errors-top"></div>
+    </div>
+    <!-- /END: Intro -->
+  </header>
+  <!-- /END: Site Header -->
+  <main role="main" class="site-main-content">
+    <!-- START: Features Section -->
+    TODO
+  </main>
+  <!-- START: Site Footer -->
+  <footer role="contentinfo" class="site-footer">
+    <div class="row footer-info">
+      <!-- START: Copyright Notice -->
+      <div class="twelve columns">
+        <p class="footer-copyright">Le HTML, les CSS, les images, et le design sont basés sur un design
+          <a href="http://nodeschool.io/paris">forké de NodeSchool Paris</a>, lui-même
+          <a href="http://nodeschool.io/berlin">forké de NodeSchool Berlin</a>, lui-même
+          <a href="http://github.com/pikkupanda/pikkupanda.github.io">forké de pikkupanda.de</a> qui, quant à lui, était
+          <a href="https://github.com/maxogden/csvconf.com">forké de csvconf.com</a>, lequel avait
+          <a href="https://github.com/sudomesh/peoplesopen-front">forké depuis PeoplesOpen.Net</a> qui, à son tour, avait forké
+          <a href="http://martini.codegangsta.io/">le thème de Martini</a>, et on réutilise tout ça sous licence MIT.
+          C’est une longue histoire, quoi. Continue à l’écrire en forkant ce site depuis <a href="https://github.com/nodeschool/paris">GitHub</a>.
+          The background picture is <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a> by <a href="http://commons.wikimedia.org/wiki/File:2006-09-19_Berlin_Brandenburger_Tor.jpg">Stephan Czuratis.</a>
+          Les icônes sont de <a href="http://www.entypo.com/">Daniel Bruce</a>, et utilisés en <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.
+          L’icône de Tour Eiffel qui sert à notre logo est de <a href="http://www.freepik.com">Freepik</a>, via <a href="https://www.flaticon.com/">www.flaticon.com</a>, sous licence <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" rel="noopener noreferrer">CC 3.0 BY</a>.
+        </p>
+      </div>
+      <!-- /END: Copyright Notice -->
+      <!--
+      <div class="six columns">
+        <h3> Sponsored by </h3>
+        <a target="_blank" href="https://www.digitalocean.com/">
+          <img src="img/sponsors/digitalocean_white.png" alt="DigitalOcean"/>
+        </a>
+      </div>
+      -->
+    </div>
+  </footer>
+  <!-- /END: Site Footer -->
+  <script>
+    function injectNextMeetup({ data = [] }) {
+      const MONTHS = 'janvier février mars avril mai juin juillet août septembre octobre novembre décembre'.split(' ')
+
+      const nextMeetup = data[0]
+      if (!nextMeetup) return
+
+      const [year, month, day] = nextMeetup.local_date.split('-').map((s) => Number(s))
+      const nextDate = `${day} ${MONTHS[month - 1]} ${year}`
+      document.getElementById('nextDate').textContent = nextDate
+
+      const regURL = nextMeetup.link
+      document.getElementById('registrationLink').href = regURL
+    }
+  </script>
+  <script src="https://api.meetup.com/NodeSchool-Paris/events?status=upcoming&amp;callback=injectNextMeetup"></script>
+</body>
+</html>

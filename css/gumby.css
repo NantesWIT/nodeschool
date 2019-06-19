@@ -235,9 +235,9 @@ h6 {
 }
 
 /*=====================================================
- 
+
   Links & Paragraph styles
-  
+
   ======================================================*/
 p {
   font-family: anaheimregular, sans-serif;
@@ -273,7 +273,7 @@ a:hover {
 /*=====================================================
 
   Lists
-  
+
  ======================================================*/
 ul, ol {
   margin-bottom: 0.273em;
@@ -6158,6 +6158,16 @@ i.icon-ticket:before {
   height: inherit;
 }
 
+.icon-money.icon-left a:before, .icon-money.icon-right a:after {
+  content: "💸";
+  height: inherit;
+}
+
+i.icon-money:before {
+  content: "💸";
+  height: inherit;
+}
+
 .icon-water.icon-left a:before, .icon-water.icon-right a:after {
   content: "💦";
   height: inherit;
@@ -8172,7 +8182,7 @@ table.rounded > tbody:first-child tr:first-child td {
 
 /****************
 *
-* Reel v1.0 
+* Reel v1.0
 * -------------
 *
 * Simple, Responsive App Showcase
@@ -8183,7 +8193,7 @@ table.rounded > tbody:first-child tr:first-child td {
 /**
 * Reusable animations & classes
 * Animations can be attached to any element using a class with their name.
-* Also included in this section are global utility classes, 
+* Also included in this section are global utility classes,
 * such as .screen-reader-text.
 *****************************************************/
 /* Utility classes
@@ -8192,11 +8202,11 @@ table.rounded > tbody:first-child tr:first-child td {
   display: none;
 }
 
-/** 
+/**
 * Reusable Noise Class
 * Will add transparent noise to
 * any element with this class.
-* For more details: 
+* For more details:
 * http://www.mightymeta.co.uk/css-noise/
 *****************/
 .noise {
@@ -8224,7 +8234,7 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-/** 
+/**
 * Custom Form Components
 *****************/
 .catch-errors-top, .catch-errors-bot {
@@ -8263,7 +8273,7 @@ input::-moz-focus-inner {
   margin-top: 30px;
 }
 
-/** 
+/**
 * Custom Scrollbar
 *****************/
 ::-webkit-scrollbar {
@@ -8874,9 +8884,9 @@ input::-moz-focus-inner {
   }
 }
 
-/** 
-* Associate keyframe animations with classes. 
-* Default animation time = 1 second. 
+/**
+* Associate keyframe animations with classes.
+* Default animation time = 1 second.
 *****************/
 .fadeIn {
   opacity: 1;
@@ -8932,7 +8942,7 @@ input::-moz-focus-inner {
 *****************************************************/
 .site-header {
   background-color: #2b3848;
-  /** 
+  /**
   * Add your custom background image for a cool parallax effect.
   * background-image:url('img/your-header-background-image.png')
   *****************/
@@ -9102,7 +9112,7 @@ input::-moz-focus-inner {
 }
 
 /**
-* Main Content & Section General Styles 
+* Main Content & Section General Styles
 * Applied globally across the main content area.
 *****************************************************/
 .site-section {
@@ -9111,7 +9121,7 @@ input::-moz-focus-inner {
 }
 
 /**
-* Features Section 
+* Features Section
 *****************************************************/
 .features-item {
   display: inline-block;
@@ -9352,7 +9362,62 @@ input::-moz-focus-inner {
 }
 
 /**
-* Site Footer 
+* Sponsoring Section
+*****************************************************/
+.section-sponsoring {
+  background-color: #d6d6d6;
+  text-align: center;
+}
+
+.sponsoring-title {
+  color: #290805;
+  font-weight: 300;
+  font-size: 45px;
+}
+
+.sponsoring-subtitle {
+  color: #290805;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.sponsoring-form {
+  margin-top: 50px;
+}
+.sponsoring-form .input-side {
+  width: 67%;
+  margin-right: 3%;
+}
+.sponsoring-form .input-side:focus {
+  border-color: #ee7468;
+}
+@media screen and (max-width: 540px) {
+  .sponsoring-form .input-side {
+    width: 100%;
+  }
+}
+.sponsoring-form .btn-side {
+  width: 50%;
+  background-color: transparent;
+  border: 5px solid #fff;
+}
+.sponsoring-form .btn-side:hover {
+  border-color: #f18f2b;
+  background-color: #f18f2b;
+}
+.sponsoring-form .btn-side:active {
+  border-color: #1e2732;
+  background-color: #1e2732;
+}
+@media screen and (max-width: 540px) {
+  .sponsoring-form .btn-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/**
+* Site Footer
 *****************************************************/
 .site-footer {
   background-color: #2b3848;

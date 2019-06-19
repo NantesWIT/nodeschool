@@ -52,6 +52,10 @@
   background-color: #1a348e;
 }
 
+.section-sponsoring {
+  background-color: #d6d6d6;
+}
+
 .site-header .logo {
   background-color: rgba(110, 0, 0, 0.5);
 }
@@ -77,6 +81,15 @@
   color: white;
 }
 .section-signup a {
+  color: white;
+  text-decoration: underline;
+}
+
+.section-sponsoring,
+.signup-subtitle {
+  color: white;
+}
+.section-sponsoring a {
   color: white;
   text-decoration: underline;
 }
@@ -160,6 +173,8 @@
     margin-top: 24px;
   }
   .header-signup {
+  }
+  .header-sponsoring {
   }
   .header-intro-wrap .hs-disclaimer {
     margin-top: 50px;
