@@ -281,3 +281,17 @@ section.section-organizers h5, section.section-organizers h6{
   background-color: rgba(white, 0.3);
   transition: background-color 0.5s ease;
 }
+
+.registration-form{
+  transition:height 1s;
+  /* opacity: 1; */
+  height:100%;
+  overflow:hidden;
+}
+
+.hidden{
+  /* opacity:0; */
+  height:0;
+}
+
+

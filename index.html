@@ -82,7 +82,20 @@
         <!-- START: Signup Form Bottom -->
         <div class="eight columns centered">
           <div class="signup-form">
-            <a id="registrationLink" href="./registration.html" class="btn-side animate-on-scroll" data-scrollanimation="fadeInLeft"><i class="icon-ticket"></i> Inscris-toi !</a>
+            <a id="registrationLink" onclick="toggleDisplay('registrationForm')" class="btn-side animate-on-scroll" data-scrollanimation="fadeInLeft"><i class="icon-ticket"></i> Inscris-toi !</a>
+            <div class="registration-form hidden" id="registrationForm">
+              <form>
+                <label for="name">Prénom</label><input type="text" id="name"/>
+                <label for="mail">Mail</label><input type="text" id="mail"/>
+                <label for="gender">Genre</label>
+                <select id="gender">
+                  <option>Femme</option>
+                  <option>Homme</option>
+                  <option>Autre</option>
+                </select>
+                <input type="button" value="Valider"/>
+              </form>
+            </div>
           </div>
         </div>
         <!-- /END: Signup Form Bottom -->
@@ -188,6 +201,10 @@
   </footer>
   <!-- /END: Site Footer -->
   <script>
+  function toggleDisplay(id){
+    this.document.getElementById(id).classList.toggle("hidden");
+  }
+  </script>
 
 </body>
 </html>
