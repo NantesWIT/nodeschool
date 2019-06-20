@@ -283,15 +283,20 @@ section.section-organizers h5, section.section-organizers h6{
 }
 
 .registration-form{
-  transition:height 1s;
+  /* transition:height 1s; */
   /* opacity: 1; */
-  height:100%;
+  height:auto;
   overflow:hidden;
+  max-height:400px;
+
+  transition:max-height 0.25s ease-out;
+  
+  margin-top:1em;
 }
 
 .hidden{
   /* opacity:0; */
-  height:0;
+  max-height:0;
 }
 
 
