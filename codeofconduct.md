@@ -4,12 +4,10 @@ Tous les auditeurs, orateurs, sponsors et bénévoles de NodeSchool Nantes doive
 
 *tl;dr : ne harcelez pas les gens. Soyez top et respectueux les uns envers les autres.*
 
-## Besoin d’aide ? Contactez ???
+## Besoin d’aide ? Contactez Aurore
 
-Contact |
---- | ---
-Twitter |  
-Email |  
+Contact | Aurore Lecointe
+Email |lecointe@codelutin.com
 Phone |  
 
 ## La version courte
