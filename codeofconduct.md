@@ -7,7 +7,9 @@ Tous les auditeurs, orateurs, sponsors et bénévoles de NodeSchool Nantes doive
 ## Besoin d’aide ? Contactez Aurore
 
 Contact | Aurore Lecointe
+
 Email |lecointe@codelutin.com
+
 Phone |  
 
 ## La version courte
