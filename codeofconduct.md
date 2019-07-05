@@ -9,7 +9,6 @@ Tous les auditeurs, orateurs, sponsors et bénévoles de NodeSchool Nantes doive
 Contact | Aurore Lecointe
 --- | ---
 Email |lecointe@codelutin.com
-Phone |  
 
 ## La version courte
 
