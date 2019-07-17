@@ -6159,7 +6159,7 @@ i.icon-ticket:before {
 }
 
 .icon-money.icon-left a:before, .icon-money.icon-right a:after {
-  content: "💸";
+  content: "💸"";
   height: inherit;
 }
 

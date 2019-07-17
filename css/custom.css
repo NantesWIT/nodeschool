@@ -32,13 +32,13 @@
 /* overrides */
 
 .features-circle {
-  background-color: #f26b66;
+  background-color: #f75c5c;
   border: 6px solid #d82727;
 }
 
 .features-item:hover .features-circle {
-  background-color: #AB3375;
-  border-color: #8E1A59;
+  background-color: #e4f06a;
+  border-color: #b8c910;
 }
 
 .logo span:first-child {
@@ -59,7 +59,7 @@
 }
 
 .section-signup {
-  background-color: #8E1A59;
+  background-color: #f75c5c;
 }
 
 .section-map {
@@ -78,8 +78,44 @@
 
 .signup-form .btn-side:hover {
   border-color: rgb(236,234,213);
-  color: rgb(92,0,50);
+  color: black;
   background-color: rgb(236,234,213);
+}
+
+.sponsoring-form {
+  margin-top: 50px;
+}
+.sponsoring-form .input-side {
+  width: 67%;
+  margin-right: 3%;
+}
+.sponsoring-form .input-side:focus {
+  border-color: #ee7468;
+}
+@media screen and (max-width: 540px) {
+  .sponsoring-form .input-side {
+    width: 100%;
+  }
+}
+.sponsoring-form .btn-side {
+  width: 50%;
+  background-color: transparent;
+  border: 5px solid black;
+  color: black;
+}
+.sponsoring-form .btn-side:hover {
+  border-color: rgb(236,234,213);
+  background-color: rgb(236,234,213);
+}
+.sponsoring-form .btn-side:active {
+  border-color: #1e2732;
+  background-color: #1e2732;
+}
+@media screen and (max-width: 540px) {
+  .sponsoring-form .btn-side {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* end color overrides */
@@ -148,7 +184,7 @@ header .row { z-index: 2; position: relative; }
 }
 
 .site-footer {
-  background-color: #9F1F30;
+  background-color: #f75c5c;
 }
 
 footer h4{
@@ -201,7 +237,7 @@ footer h4{
 
 section.section-organizers{
   text-align: center;
-  background-color: #9F1F30;
+  background-color: #f75c5c;
   color: white;
 }
 
@@ -267,7 +303,6 @@ section.section-organizers h5, section.section-organizers h6{
   flex: 1;
 }
 .organizers img{
-  width: 200px;
   height: 200px;
   border-radius: 4px;
 }
@@ -290,7 +325,7 @@ section.section-organizers h5, section.section-organizers h6{
   max-height:400px;
 
   transition:max-height 0.25s ease-out;
-  
+
   margin-top:1em;
 }
 
@@ -299,4 +334,6 @@ section.section-organizers h5, section.section-organizers h6{
   max-height:0;
 }
 
-
+.section-sponsoring {
+  background-color: #bfbfbf;
+}
